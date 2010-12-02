@@ -1,0 +1,693 @@
+From: "Saved by Windows Internet Explorer 8"
+Subject: SQLite CVSTrac
+Date: Sat, 30 Oct 2010 14:14:20 -0400
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01CB783C.BEF5ECF0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7600.16543
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01CB783C.BEF5ECF0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.sqlite.org/cvstrac/wiki?p=HowToCompileWithVsNet
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>SQLite CVSTrac</TITLE>
+<META content=3D"text/html; charset=3DUTF-8" =
+http-equiv=3Dcontent-type><LINK=20
+rel=3Dstylesheet type=3Dtext/css =
+href=3D"http://www.sqlite.org/cvstrac.css" media=3Dall>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.7600.16671"></HEAD>
+<BODY>
+<DIV><!-- container div to satisfy validator -->
+<DIV class=3Dsqlite_header><A =
+href=3D"http://www.sqlite.org/index.html"><IMG=20
+class=3Dlogo border=3D0 alt=3D"SQLite Logo"=20
+src=3D"http://www.sqlite.org/images/SQLite.gif"></A>=20
+<DIV><!-- IE hack to prevent disappearing logo--></DIV>
+<DIV class=3Dtagline>Small. Fast. Reliable.<BR>Choose any three.</DIV>
+<TABLE style=3D"CLEAR: both" width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class=3Dse>
+      <DIV class=3Dsw>
+      <DIV class=3Dne>
+      <DIV class=3Dnw>
+      <DIV class=3Dtoolbar><A =
+href=3D"http://www.sqlite.org/about.html">About</A> <A=20
+      href=3D"http://www.sqlite.org/sitemap.html">Sitemap</A> <A=20
+      href=3D"http://www.sqlite.org/docs.html">Documentation</A> <A=20
+      href=3D"http://www.sqlite.org/download.html">Download</A> <A=20
+      href=3D"http://www.sqlite.org/copyright.html">License</A> <A=20
+      href=3D"http://www.sqlite.org/news.html">News</A> <A=20
+      href=3D"http://www.sqlite.org/cvstrac/index">Developers</A> <A=20
+      href=3D"http://www.sqlite.org/support.html">Support</A>=20
+      </DIV></DIV></DIV></DIV></DIV></TD></TR></TBODY></TABLE></DIV>
+<DIV id=3Dheader>
+<H1 id=3Dtitle>sqlite - <A=20
+href=3D"http://www.sqlite.org/cvstrac/search?s=3DHowToCompileWithVsNet&am=
+p;w=3D1"=20
+rel=3Dnofollow>How To Compile With Vs Net</A> </H1>
+<P id=3Didentity><A =
+href=3D"http://www.sqlite.org/cvstrac/honeypot"><NOTATAG=20
+arg=3D"meaningless"></A><A title=3D"Log in"=20
+href=3D"http://www.sqlite.org/cvstrac/login?nxp=3D/cvstrac/wiki">Not =
+logged in</A>=20
+</P>
+<UL id=3Dnavigation>
+  <LI><A =
+href=3D"http://www.sqlite.org/cvstrac/honeypot">Honeypot</A></LI>
+  <LI><A href=3D"http://www.sqlite.org/cvstrac/dir">Browse</A></LI>
+  <LI><A href=3D"http://www.sqlite.org/cvstrac/index">Home</A></LI>
+  <LI><A href=3D"http://www.sqlite.org/cvstrac/login">Login</A></LI>
+  <LI><A =
+href=3D"http://www.sqlite.org/cvstrac/reportlist">Reports</A></LI>
+  <LI><A =
+href=3D"http://www.sqlite.org/cvstrac/search?w=3D1">Search</A></LI>
+  <LI><A =
+href=3D"http://www.sqlite.org/cvstrac/timeline">Timeline</A></LI>
+  <LI><A href=3D"http://www.sqlite.org/cvstrac/wiki">Wiki</A></LI></UL>
+<UL id=3Daction>
+  <LI><A=20
+  =
+href=3D"http://www.sqlite.org/cvstrac/attach_add?tn=3DHowToCompileWithVsN=
+et"=20
+  rel=3Dnofollow>Attach</A></LI>
+  <LI><A href=3D"http://www.sqlite.org/cvstrac/wikitoc"=20
+  rel=3Dnofollow>Contents</A></LI>
+  <LI><A=20
+  =
+href=3D"http://www.sqlite.org/cvstrac/wiki?p=3DHowToCompileWithVsNet&amp;=
+t=3D1242963449&amp;diff=3D1"=20
+  rel=3Dnofollow>Diff</A></LI>
+  <LI><A =
+href=3D"http://www.sqlite.org/cvstrac/wikiedit?p=3DHowToCompileWithVsNet"=
+=20
+  rel=3Dnofollow>Edit</A></LI>
+  <LI><A=20
+  =
+href=3D"http://www.sqlite.org/cvstrac/wiki?p=3DHowToCompileWithVsNet&amp;=
+t=3D1242963449"=20
+  rel=3Dnofollow>History</A></LI>
+  <LI><A=20
+  =
+href=3D"http://www.sqlite.org/cvstrac/wiki.txt?p=3DHowToCompileWithVsNet&=
+amp;t=3D1242963449"=20
+  rel=3Dnofollow>Text</A></LI></UL></DIV>
+<DIV id=3Dcontent>This page explains how to compile SQLite with =
+Microsoft Visual=20
+Studio.NET (aka VS.NET).=20
+<P><STRONG>Download</STRONG>=20
+<P>Download and unzip the file sqlite_source.zip (or=20
+sqlite-amalgamation-x_x_x_x.zip). Do not use the .tar.gz files because =
+they have=20
+not been pre-processed for use with Windows.=20
+<P><STRONG>Create a starter DLL project</STRONG>=20
+<P>
+<OL>
+  <LI>File &gt; New &gt; Project.=20
+  <LI>Under Project Types, select Visual C++ Projects and then Win32.=20
+  <LI>Choose the project template "Win32 Project".=20
+  <LI>Give the project a name and click OK.=20
+  <LI>When the "Win32 Application Wizard" appears, choose Application =
+Settings.=20
+  set the Application Type to DLL and check the box that says "Empty =
+project".=20
+  Click Finish. You now have a blank DLL project. </LI></OL>
+<P><STRONG>Add the SQLite files to the project</STRONG>=20
+<P>
+<OL>
+  <LI>Project &gt; Add Existing Item.=20
+  <LI>Add all the .c and .h files that you unzipped, except for: =
+tclsqlite.c and=20
+  shell.c. Note: You may add tclsqlite.c and shell.c, but then you have =
+to=20
+  define the preprocessor-symbol NO_TCL.=20
+  <OL>
+    <LI>Click Project -&gt; Properties, navigate to the C/C++-folder and =
+choose=20
+    "Preprocessor".=20
+    <LI>In the field that says "Preprocessor definitions" add NO_TCL to =
+the=20
+    existing string, separated by a semicolon.=20
+    <LI>Under "Code Generation" for "Runtime Library" make sure to pick =
+static=20
+    linking. /MTd (release) or /MTd (debug) </LI></OL></LI></OL>
+<P><STRONG>Make a .DEF file</STRONG>=20
+<P>
+<OL>
+  <LI>A .def file should be placed in the project directory. Get the def =
+file by=20
+  downloading the zipped sqlite DLL file under the "Precompiled Binaries =
+For=20
+  Windows" in the download page.=20
+  <LI>Add the sqlite[3].def file to the project.=20
+  <LI>Under Project &gt; Properties navigate to the Linker folder and =
+choose=20
+  "Input". In the field that says "Module Definition File" type =
+sqlite[3].def.=20
+  NOTE: You have to do this twice, once for the Debug configuration and =
+once for=20
+  the Release configuration. </LI></OL>
+<P><STRONG>Compile!</STRONG>=20
+<P>The next 3 steps maybe be required by some. I was able to build the =
+DLL and=20
+produce a .lib file only following the above 12 steps. for VS 2005.=20
+<P>
+<UL>
+  <LI>In order to build the lib file so that an application can link =
+against the=20
+  sqlite[3].dll you will need to add a step to the post-build event.=20
+  <OL>
+    <LI>Right click on Project, select Properties, expand Build Events =
+and type=20
+    "LIB /DEF:&lt;path&gt;\sqlite[3].def" into the Command line field, =
+both for=20
+    debug and release configurations, where &lt;path&gt; is the location =
+to the=20
+    file sqlite[3].def. </LI></OL>
+  <P></P>
+  <LI>To compile 3.3.7(this may apply to other versions too), I had to =
+do this=20
+  extra step:=20
+  <OL>
+    <LI>Add the project directory to the include path, here's how to do =
+it in=20
+    details:=20
+    <LI>Under Project &gt; Properties navigate to the C/C++ folder and =
+choose=20
+    "General", In the field "Additional Include Directories" type "."(a =
+single=20
+    dot, which is the current directory)=20
+    <LI>Repeat for each configuration (debug/release/Win32/x64). =
+</LI></OL>
+  <P></P>
+  <LI>To compile 3.6.14.1 (maybe others too), I also had to:=20
+  <OL>
+    <LI>Go to Project &gt; Properties.=20
+    <LI>Open the C/C++ then Preprocessor folder.=20
+    <LI>Add "SQLITE_ENABLE_COLUMN_METADATA" to the list of preprocessor=20
+    definitions.=20
+    <LI>Repeat for each configuration (debug/release/Win32/x64).=20
+</LI></OL></LI></UL>
+<P><STRONG>How to make the SQLITE.EXE command-line utility</STRONG>=20
+<P>There are some slight changes if you wanted to build the sqlite.exe=20
+command-line utility, instead of the DLL. To do that, when you're =
+creating the=20
+project and you get to the "Win32 Application Wizard", choose "Console=20
+Application" instead of "DLL". Then, when you are adding files to the =
+project,=20
+also add shell.c. Finally, don't include the .DEF file.=20
+<P>The sqllite def for version 2 is.=20
+<P><PRE>  EXPORTS
+   sqlite_open
+   sqlite_close
+   sqlite_exec
+   sqlite_last_insert_rowid
+   sqlite_error_string
+   sqlite_interrupt
+   sqlite_complete
+   sqlite_busy_handler
+   sqlite_busy_timeout
+   sqlite_get_table
+   sqlite_free_table
+   sqlite_mprintf
+   sqlite_vmprintf
+   sqlite_exec_printf
+   sqlite_exec_vprintf
+   sqlite_get_table_printf
+   sqlite_get_table_vprintf
+   sqlite_freemem
+   sqlite_libversion
+   sqlite_libencoding
+   sqlite_changes
+   sqlite_create_function
+   sqlite_create_aggregate
+   sqlite_function_type
+   sqlite_user_data
+   sqlite_aggregate_context
+   sqlite_aggregate_count
+   sqlite_set_result_string
+   sqlite_set_result_int
+   sqlite_set_result_double
+   sqlite_set_result_error
+   sqliteMalloc
+   sqliteFree
+   sqliteRealloc
+   sqlite_set_authorizer
+   sqlite_trace
+   sqlite_compile
+   sqlite_step
+   sqlite_finalize
+   sqlite_progress_handler
+   sqlite_reset
+   sqlite_last_statement_changes</PRE></DIV></DIV></BODY></HTML>
+
+------=_NextPart_000_0000_01CB783C.BEF5ECF0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sqlite.org/images/SQLite.gif
+
+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
+
+------=_NextPart_000_0000_01CB783C.BEF5ECF0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.sqlite.org/cvstrac.css
+
+BODY {
+	PADDING-BOTTOM: 8px; MARGIN: auto; PADDING-LEFT: 8px; PADDING-RIGHT: =
+8px; FONT-FAMILY: "Verdana" "sans-serif"; PADDING-TOP: 8px
+}
+.sqlite_header {
+	MARGIN: auto
+}
+A {
+	COLOR: #45735f
+}
+A:visited {
+	COLOR: #734559
+}
+.logo {
+	POSITION: absolute; MARGIN: 3px
+}
+.tagline {
+	TEXT-ALIGN: right; FONT-STYLE: italic; MARGIN: 58px 12px 12px; WIDTH: =
+240px; FLOAT: right
+}
+.toolbar {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 1px; LINE-HEIGHT: 1.6em; =
+FONT-VARIANT: small-caps; MARGIN: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: =
+8px; PADDING-TOP: 1px
+}
+.toolbar A {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; COLOR: =
+white; TEXT-DECORATION: none; PADDING-TOP: 6px
+}
+.toolbar A:visited {
+	COLOR: white
+}
+.toolbar A:hover {
+	BACKGROUND: white; COLOR: #80a796
+}
+.content {
+	MARGIN: 5%
+}
+.content DT {
+	FONT-WEIGHT: bold
+}
+.content DD {
+	MARGIN-BOTTOM: 25px; MARGIN-LEFT: 20%
+}
+.content UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+.se {
+	BACKGROUND: url(/images/se.png) #80a796 no-repeat 100% 100%
+}
+.sw {
+	BACKGROUND: url(/images/sw.png) no-repeat 0% 100%
+}
+.ne {
+	BACKGROUND: url(/images/ne.png) no-repeat 100% 0%
+}
+.nw {
+	BACKGROUND: url(/images/nw.png) no-repeat
+}
+BODY {
+	BACKGROUND-COLOR: white
+}
+#footer {
+	CLEAR: both; FONT-SIZE: 0.67em
+}
+HR {
+	CLEAR: both
+}
+#header {
+	BORDER-BOTTOM: #80a796 2px solid; POSITION: relative; BORDER-LEFT: =
+#80a796 2px solid; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: #f0ffff; BORDER-TOP: =
+#80a796 2px solid; BORDER-RIGHT: #80a796 2px solid; PADDING-TOP: 0px
+}
+#title {
+	MARGIN: 2px; MAX-WIDTH: 30%; FONT-SIZE: 1.17em; FONT-WEIGHT: bold
+}
+#identity {
+	MARGIN: 2px; MAX-WIDTH: 30%; FONT-SIZE: 0.83em; FONT-WEIGHT: normal
+}
+#navigation #current {
+	DISPLAY: none
+}
+#navigation LI {
+	MARGIN: 1px; DISPLAY: inline; WHITE-SPACE: nowrap
+}
+#navigation LI :before {
+	COLOR: black; CONTENT: "["
+}
+#navigation LI :after {
+	COLOR: black; CONTENT: "]"
+}
+#navigation {
+	POSITION: absolute; TEXT-ALIGN: right; PADDING-BOTTOM: 0px; =
+LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; MAX-WIDTH: 50%; FLOAT: right; TOP: 0em; RIGHT: 0em; PADDING-TOP: =
+0px
+}
+#action LI {
+	MARGIN: 1px; DISPLAY: inline; WHITE-SPACE: nowrap
+}
+#action LI :before {
+	COLOR: black; CONTENT: "["
+}
+#action LI :after {
+	COLOR: black; CONTENT: "]"
+}
+#action {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 1px; LIST-STYLE-TYPE: none; MARGIN: =
+1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BACKGROUND: #f0f0f0; CLEAR: =
+both; PADDING-TOP: 1px
+}
+#content {
+	CLEAR: both
+}
+#breadcrumb {
+	DISPLAY: none
+}
+#history {
+	BORDER-BOTTOM: #a0b5f4 2px solid; BORDER-LEFT: #a0b5f4 2px solid; =
+PADDING-BOTTOM: 0px; MARGIN: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; =
+WHITE-SPACE: nowrap; FLOAT: right; BORDER-TOP: #a0b5f4 2px solid; =
+BORDER-RIGHT: #a0b5f4 2px solid; PADDING-TOP: 0px
+}
+#history H3 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN: 2px; PADDING-LEFT: =
+0px; PADDING-RIGHT: 0px; BACKGROUND: #d0d9f4; FONT-SIZE: 1em; =
+FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+#history UL {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: =
+2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#history .current {
+	FONT-WEIGHT: bold
+}
+#history .off {
+	FONT-WEIGHT: bold
+}
+#history P {
+	PADDING-BOTTOM: 0px; MARGIN: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+#wikitoc {
+	BORDER-SPACING: 20px 0px
+}
+#wikitoc TH {
+	BACKGROUND: #d0d0d0
+}
+#timeline {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; MARGIN: 0.5em 0px 0px; =
+PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#timeline .dt {
+	BORDER-BOTTOM: #80a796 2px solid; BORDER-LEFT: #80a796 2px solid; =
+PADDING-BOTTOM: 0.25em; MARGIN: 0.2em 0px; PADDING-LEFT: 0.25em; =
+PADDING-RIGHT: 0.25em; BACKGROUND: #f0ffff; FLOAT: left; CLEAR: left; =
+FONT-SIZE: 1em; BORDER-TOP: #80a796 2px solid; FONT-WEIGHT: normal; =
+BORDER-RIGHT: #80a796 2px solid; PADDING-TOP: 0.25em
+}
+#timeline .dm {
+	BORDER-BOTTOM: #ec9898 2px solid; BORDER-LEFT: #ec9898 2px solid; =
+PADDING-BOTTOM: 0.25em; MARGIN: 0.2em 0px; PADDING-LEFT: 0.25em; =
+PADDING-RIGHT: 0.25em; BACKGROUND: #f7c0c0; FLOAT: left; CLEAR: left; =
+FONT-SIZE: 1em; BORDER-TOP: #ec9898 2px solid; FONT-WEIGHT: normal; =
+BORDER-RIGHT: #ec9898 2px solid; PADDING-TOP: 0.25em
+}
+#timeline .entries {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 1em; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 0px; CLEAR: both; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+#timeline .entries DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; CLEAR: both; PADDING-TOP: 0px
+}
+#timeline .entries DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FLOAT: left; PADDING-TOP: 0px
+}
+#timeline .entries .datetime {
+	TEXT-ALIGN: right; WIDTH: 10%
+}
+#timeline .entries .time {
+	TEXT-ALIGN: center
+}
+#timeline .entries .hint {
+	TEXT-ALIGN: center; WIDTH: 5%
+}
+#timeline .entries .branch {
+	WIDTH: 85%; BACKGROUND: #dddddd
+}
+#timeline .entries .action {
+	WIDTH: 85%
+}
+#timelineopts {
+	PADDING-BOTTOM: 3px; MARGIN-TOP: 1em; PADDING-LEFT: 3px; PADDING-RIGHT: =
+3px; CLEAR: both; BORDER-TOP: black 1px solid; PADDING-TOP: 1em
+}
+#timelineopts FIELDSET {
+	BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid; =
+PADDING-BOTTOM: 3px; MARGIN: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; =
+BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: =
+3px
+}
+#timelineopts #days {
+=09
+}
+#timelineopts #checkout {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; WIDTH: 45%; PADDING-RIGHT: 3px; =
+FLOAT: left; PADDING-TOP: 3px
+}
+#timelineopts #ticket {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; WIDTH: 45%; PADDING-RIGHT: 3px; =
+FLOAT: left; PADDING-TOP: 3px
+}
+#timelineopts #timeline {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; WIDTH: 45%; PADDING-RIGHT: 3px; =
+FLOAT: left; CLEAR: left; PADDING-TOP: 3px
+}
+#timelineopts #other {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; WIDTH: 45%; PADDING-RIGHT: 3px; =
+FLOAT: left; PADDING-TOP: 3px
+}
+#timelineopts #show {
+	CLEAR: both
+}
+#index {
+	PADDING-BOTTOM: 0px; MARGIN: 1em 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+#setup {
+	PADDING-BOTTOM: 0px; MARGIN: 1em 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; PADDING-TOP: 0px
+}
+#index DT {
+	PADDING-BOTTOM: 0.5em; MARGIN: 0px; PADDING-LEFT: 0.5em; WIDTH: 30%; =
+PADDING-RIGHT: 0.5em; DISPLAY: block; WHITE-SPACE: nowrap; FLOAT: left; =
+CLEAR: left; FONT-WEIGHT: bold; PADDING-TOP: 0.5em
+}
+#setup DT {
+	PADDING-BOTTOM: 0.5em; MARGIN: 0px; PADDING-LEFT: 0.5em; WIDTH: 30%; =
+PADDING-RIGHT: 0.5em; DISPLAY: block; WHITE-SPACE: nowrap; FLOAT: left; =
+CLEAR: left; FONT-WEIGHT: bold; PADDING-TOP: 0.5em
+}
+#index DD {
+	PADDING-BOTTOM: 0.5em; MARGIN: 0px; PADDING-LEFT: 0.5em; WIDTH: 55%; =
+PADDING-RIGHT: 0.5em; FLOAT: left; PADDING-TOP: 0.5em
+}
+#setup DD {
+	PADDING-BOTTOM: 0.5em; MARGIN: 0px; PADDING-LEFT: 0.5em; WIDTH: 55%; =
+PADDING-RIGHT: 0.5em; FLOAT: left; PADDING-TOP: 0.5em
+}
+.ticket .closed {
+	TEXT-DECORATION: line-through
+}
+.ticket .fixed {
+	TEXT-DECORATION: line-through
+}
+.ticket .tested {
+	TEXT-DECORATION: line-through
+}
+.ticket .defer {
+	TEXT-DECORATION: line-through
+}
+.chng .branch {
+	BACKGROUND: #dddddd
+}
+.wiki .missing {
+	FONT-STYLE: italic; COLOR: gray; FONT-WEIGHT: normal
+}
+DIV.difftop {
+	FLOAT: right
+}
+A.external:before {
+	COLOR: #a0a0a0; CONTENT: "\0000a4"
+}
+A.file {
+	FONT-FAMILY: monospace
+}
+.two {
+	FONT-SIZE: 1.17em
+}
+.three {
+	FONT-SIZE: 1.33em
+}
+.icon:before {
+	COLOR: black; CONTENT: "\002022"
+}
+.milestone.icon:before {
+	COLOR: #007878; CONTENT: "\0000a4"
+}
+.del.icon:before {
+	COLOR: red; CONTENT: "\0000d7"
+}
+.file.icon:before {
+	COLOR: black; CONTENT: "\002022"
+}
+.dir.icon:before {
+	COLOR: green; CONTENT: "\0000bb"
+}
+.backup.icon:before {
+	COLOR: black; CONTENT: "\0000ab"
+}
+.checkin.icon:before {
+	COLOR: blue; CONTENT: "\002022"
+}
+.ticket.icon:before {
+	COLOR: blue; CONTENT: "\00203a"
+}
+.edit.icon:before {
+	COLOR: #8c80a3; CONTENT: "\00002a"
+}
+.attach.icon:before {
+	COLOR: blue; CONTENT: "\0000bb"
+}
+.inspect.icon:before {
+	COLOR: blue; CONTENT: "\002022"
+}
+.type.icon:before {
+	COLOR: purple; CONTENT: "\0000bb"
+}
+.code.type.icon:before {
+	COLOR: red; CONTENT: "\0000d7"
+}
+.state.icon:before {
+	COLOR: #ffa000; CONTENT: "\002666"
+}
+.new.state.icon:before {
+	COLOR: red; CONTENT: "\0000d7"
+}
+.active.state.icon:before {
+	COLOR: red; CONTENT: "\0000d7"
+}
+.fixed.state.icon:before {
+	COLOR: green; CONTENT: "\00221a"
+}
+.closed.state.icon:before {
+	COLOR: green; CONTENT: "\00221a"
+}
+.defer.state.icon:before {
+	COLOR: green; CONTENT: "\00221a"
+}
+.dot.icon:before {
+	COLOR: blue; CONTENT: "\002022"
+}
+.ptr1.icon:before {
+	COLOR: purple; CONTENT: "\0000bb"
+}
+.rlog {
+	PADDING-BOTTOM: 0px; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; =
+PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; =
+BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 0px
+}
+.rlog TD {
+	TEXT-ALIGN: left
+}
+.rlog TH {
+	TEXT-ALIGN: left
+}
+.rlog .version {
+	TEXT-ALIGN: center; WIDTH: 80px
+}
+.rlog .date {
+	TEXT-ALIGN: left; WHITE-SPACE: nowrap
+}
+.rlog .odd {
+	BACKGROUND: #efefff
+}
+.rlog .milestone {
+	BACKGROUND: #f7c0c0
+}
+.rlog .branch {
+	BACKGROUND: #dddddd
+}
+
+------=_NextPart_000_0000_01CB783C.BEF5ECF0--
